@@ -1,0 +1,22 @@
+{
+  "name": "localdialogflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "simpleServer.js",
+  "scripts": {
+    "tunnel": "ngrok http 8080",
+    "dev": "nodemon --inspect simpleServer.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "actions-on-google": "^2.12.0",
+    "bent": "^7.3.0",
+    "dialogflow-fulfillment": "^0.6.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "ngrok": "^3.2.7",
+    "nodemon": "^2.0.3"
+  }
+}

@@ -1,0 +1,753 @@
+{
+  "id": "e37177e1-e7c6-414c-807d-59e6630b1148",
+  "name": "Location Latest Stats",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 750000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "all",
+          "name": "type",
+          "dataType": "@stat_type",
+          "isList": true,
+          "required": false,
+          "prompts": [],
+          "value": "$type",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "country",
+          "dataType": "@sys.geo-country-code",
+          "isList": true,
+          "required": false,
+          "prompts": [],
+          "value": "$country",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "state",
+          "dataType": "@sys.geo-state",
+          "isList": true,
+          "required": false,
+          "prompts": [],
+          "value": "$state",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "city",
+          "dataType": "@sys.geo-city",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$city",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "county",
+          "dataType": "@county",
+          "isList": true,
+          "required": false,
+          "prompts": [],
+          "value": "$county",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "deaths",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "Australia",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "netherlands",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "deaths",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What are the number of ",
+          "userDefined": false
+        },
+        {
+          "text": "confirmed",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " cases in ",
+          "userDefined": false
+        },
+        {
+          "text": "Orleans Parish",
+          "userDefined": true,
+          "alias": "city",
+          "meta": "@sys.geo-city"
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "Louisiana",
+          "userDefined": true,
+          "alias": "state",
+          "meta": "@sys.geo-state"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Number of ",
+          "userDefined": false
+        },
+        {
+          "text": "deaths",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "clayton county",
+          "userDefined": true,
+          "alias": "county",
+          "meta": "@county"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "latest stats in ",
+          "userDefined": false
+        },
+        {
+          "text": "washington",
+          "userDefined": true,
+          "alias": "state",
+          "meta": "@sys.geo-state"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "confirmed",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " cases in ",
+          "userDefined": false
+        },
+        {
+          "text": "washington",
+          "userDefined": true,
+          "alias": "state",
+          "meta": "@sys.geo-state"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What is the latest number of ",
+          "userDefined": false
+        },
+        {
+          "text": "confirmed",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " cases for ",
+          "userDefined": false
+        },
+        {
+          "text": "Texas",
+          "userDefined": true,
+          "alias": "state",
+          "meta": "@sys.geo-state"
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "Georgia",
+          "userDefined": true,
+          "alias": "state",
+          "meta": "@sys.geo-state"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What are the latest stats for ",
+          "userDefined": false
+        },
+        {
+          "text": "california",
+          "userDefined": true,
+          "alias": "state",
+          "meta": "@sys.geo-state"
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "New York",
+          "userDefined": true,
+          "alias": "state",
+          "meta": "@sys.geo-state"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What are the number of ",
+          "userDefined": false
+        },
+        {
+          "text": "confirmed",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " cases and ",
+          "userDefined": false
+        },
+        {
+          "text": "deaths",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "England",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "Spain",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Tell me the number of ",
+          "userDefined": false
+        },
+        {
+          "text": "deaths",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "alachua county",
+          "userDefined": true,
+          "alias": "county",
+          "meta": "@county"
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "brevard county",
+          "userDefined": true,
+          "alias": "county",
+          "meta": "@county"
+        },
+        {
+          "text": " in  ",
+          "userDefined": false
+        },
+        {
+          "text": "florida",
+          "userDefined": true,
+          "alias": "state",
+          "meta": "@sys.geo-state"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What are the latest stats for ",
+          "userDefined": false
+        },
+        {
+          "text": "Alachua County",
+          "userDefined": true,
+          "alias": "county",
+          "meta": "@county"
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "Orange County",
+          "userDefined": true,
+          "alias": "county",
+          "meta": "@county"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "Florida",
+          "userDefined": true,
+          "alias": "state",
+          "meta": "@sys.geo-state"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What are the latest stats for ",
+          "userDefined": false
+        },
+        {
+          "text": "Alachua County",
+          "userDefined": true,
+          "alias": "county",
+          "meta": "@county"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "Florida",
+          "userDefined": true,
+          "alias": "state",
+          "meta": "@sys.geo-state"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What are the latest stats for the ",
+          "userDefined": false
+        },
+        {
+          "text": "US",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "Canada",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many people ",
+          "userDefined": false
+        },
+        {
+          "text": "recovered",
+          "userDefined": false,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "Spain",
+          "userDefined": false,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "Australia",
+          "userDefined": false,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "total people ",
+          "userDefined": false
+        },
+        {
+          "text": "died",
+          "userDefined": false,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "Germany",
+          "userDefined": false,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "India",
+          "userDefined": false,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many folks ",
+          "userDefined": false
+        },
+        {
+          "text": "died",
+          "userDefined": false,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "Italy",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "tell me the number of ",
+          "userDefined": false
+        },
+        {
+          "text": "infected",
+          "userDefined": false,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " people in ",
+          "userDefined": false
+        },
+        {
+          "text": "USA",
+          "userDefined": false,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "tell me ",
+          "userDefined": false
+        },
+        {
+          "text": "all",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " cases in ",
+          "userDefined": false
+        },
+        {
+          "text": "gainesville",
+          "userDefined": true,
+          "alias": "city",
+          "meta": "@sys.geo-city"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many ",
+          "userDefined": false
+        },
+        {
+          "text": "deaths",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "India",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many ",
+          "userDefined": false
+        },
+        {
+          "text": "infected",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " cases in ",
+          "userDefined": false
+        },
+        {
+          "text": "USA",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

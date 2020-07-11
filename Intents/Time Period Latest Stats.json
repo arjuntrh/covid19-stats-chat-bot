@@ -1,0 +1,1586 @@
+{
+  "id": "fc8d4ff6-ee35-45b9-bd12-1fc77868af3d",
+  "name": "Time Period Latest Stats",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "country",
+          "dataType": "@sys.geo-country-code",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$country",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "type",
+          "dataType": "@stat_type",
+          "isList": true,
+          "required": false,
+          "prompts": [],
+          "value": "$type",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "date_period",
+          "dataType": "@sys.date-period",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$date_period",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "date",
+          "dataType": "@sys.date",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$date",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "netherlands",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "deaths",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "20th april 2020",
+          "userDefined": true,
+          "alias": "date",
+          "meta": "@sys.date"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "can you get the ",
+          "userDefined": false
+        },
+        {
+          "text": "stats",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "feb 29th 2020",
+          "userDefined": true,
+          "alias": "date",
+          "meta": "@sys.date"
+        },
+        {
+          "text": " of ",
+          "userDefined": false
+        },
+        {
+          "text": "usa",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many ",
+          "userDefined": false
+        },
+        {
+          "text": "cases",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "deaths",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "20th april 2020",
+          "userDefined": true,
+          "alias": "date",
+          "meta": "@sys.date"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "india",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "number of ",
+          "userDefined": false
+        },
+        {
+          "text": "deaths",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " from coronavirus in ",
+          "userDefined": false
+        },
+        {
+          "text": "india",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "last week",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many people were ",
+          "userDefined": false
+        },
+        {
+          "text": "infected",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "since yesterday",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "usa",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many people ",
+          "userDefined": false
+        },
+        {
+          "text": "got coronavirus",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "india",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "last week",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many ",
+          "userDefined": false
+        },
+        {
+          "text": "confirmed cases",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "deaths",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "germany",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "last month",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many ",
+          "userDefined": false
+        },
+        {
+          "text": "died",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "recovered",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " from coronavirus in ",
+          "userDefined": false
+        },
+        {
+          "text": "Germany",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "10th april 2020",
+          "userDefined": true,
+          "alias": "date",
+          "meta": "@sys.date"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "number of new ",
+          "userDefined": false
+        },
+        {
+          "text": "cases",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "deaths",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "USA",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "last week",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many people ",
+          "userDefined": false
+        },
+        {
+          "text": "died",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "italy",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "day before yesterday",
+          "userDefined": true,
+          "alias": "date",
+          "meta": "@sys.date"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "what are the number of ",
+          "userDefined": false
+        },
+        {
+          "text": "cases",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "usa",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "yesterday",
+          "userDefined": true,
+          "alias": "date",
+          "meta": "@sys.date"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "between 20th march 2020 and 20th april 2020",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        },
+        {
+          "text": ", how many people ",
+          "userDefined": false
+        },
+        {
+          "text": "died",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "france",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cases",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "usa",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "from 1st march 2020 to 2020-04-20",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "tell me the number of ",
+          "userDefined": false
+        },
+        {
+          "text": "deaths",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "italy",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "between april 1 2020 and 5th of april 2020",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many ",
+          "userDefined": false
+        },
+        {
+          "text": "cases",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "USA",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "from 10th of april 2020 to 20th of april 2020",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cases",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "india",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "5th april 2020",
+          "userDefined": true,
+          "alias": "date",
+          "meta": "@sys.date"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "tell me the ",
+          "userDefined": false
+        },
+        {
+          "text": "cases",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "italy",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "1st april 2020",
+          "userDefined": true,
+          "alias": "date",
+          "meta": "@sys.date"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "what are the number of ",
+          "userDefined": false
+        },
+        {
+          "text": "deaths",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "india",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " since ",
+          "userDefined": false
+        },
+        {
+          "text": "last month",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "number of ",
+          "userDefined": false
+        },
+        {
+          "text": "cases",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "ireland",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "last month",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "number of ",
+          "userDefined": false
+        },
+        {
+          "text": "deaths",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "nepal",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "last week",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "number of ",
+          "userDefined": false
+        },
+        {
+          "text": "recoveries",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "usa",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "day before yesterday",
+          "userDefined": true,
+          "alias": "date",
+          "meta": "@sys.date"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many ",
+          "userDefined": false
+        },
+        {
+          "text": "died",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "spain",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "yesterday",
+          "userDefined": true,
+          "alias": "date",
+          "meta": "@sys.date"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many have ",
+          "userDefined": false
+        },
+        {
+          "text": "recovered",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "italy",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "since 15th of april 2020",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cases",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "india",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "10 april 2020",
+          "userDefined": true,
+          "alias": "date",
+          "meta": "@sys.date"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "tell how many people ",
+          "userDefined": false
+        },
+        {
+          "text": "recovered",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "since yesterday",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "india",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many people in ",
+          "userDefined": false
+        },
+        {
+          "text": "india",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "recovered",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "since 2020-04-01",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many people in ",
+          "userDefined": false
+        },
+        {
+          "text": "mexico",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "died",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "since 10th april 2020",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "number of ",
+          "userDefined": false
+        },
+        {
+          "text": "deaths",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "england",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "2020-04-01",
+          "userDefined": true,
+          "alias": "date",
+          "meta": "@sys.date"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cases in ",
+          "userDefined": false
+        },
+        {
+          "text": "india",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "20th april 2020",
+          "userDefined": true,
+          "alias": "date",
+          "meta": "@sys.date"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "number of ",
+          "userDefined": false
+        },
+        {
+          "text": "deaths",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "india",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "last week",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 1,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many ",
+          "userDefined": false
+        },
+        {
+          "text": "recovered",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "Spain",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "since 1st april 2020",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many new ",
+          "userDefined": false
+        },
+        {
+          "text": "cases",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "last week",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        },
+        {
+          "text": " in the ",
+          "userDefined": false
+        },
+        {
+          "text": "US",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "tell me the ",
+          "userDefined": false
+        },
+        {
+          "text": "deaths",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "spain",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "since 5th march 2020",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many have ",
+          "userDefined": false
+        },
+        {
+          "text": "died",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "singapore",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "since april 10 2020",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many people ",
+          "userDefined": false
+        },
+        {
+          "text": "recovered",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "canada",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " since day ",
+          "userDefined": false
+        },
+        {
+          "text": "before yesterday",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cases",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "united states",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": "  day ",
+          "userDefined": false
+        },
+        {
+          "text": "before yesterday",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "deaths",
+          "userDefined": false,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "in",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "italy",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "since 2020-04-12",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "what are the number of ",
+          "userDefined": false
+        },
+        {
+          "text": "cases",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "india",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "since 10th april 2020",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "what are the number of ",
+          "userDefined": false
+        },
+        {
+          "text": "deaths",
+          "userDefined": true,
+          "alias": "type",
+          "meta": "@stat_type"
+        },
+        {
+          "text": " in ",
+          "userDefined": false
+        },
+        {
+          "text": "italy",
+          "userDefined": true,
+          "alias": "country",
+          "meta": "@sys.geo-country-code"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "since yesterday",
+          "userDefined": true,
+          "alias": "date_period",
+          "meta": "@sys.date-period"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
