@@ -1,4 +1,4 @@
-# COVID19-Stats-Chat-Bot
+# COVID19 Stats Chat Bot
 
 - A voice enabled chatbot that provides the latest COVID-19 stats worldwide.
 - Can report stats location wise (country, state or country) over various time periods.
